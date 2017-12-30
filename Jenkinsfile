@@ -42,7 +42,7 @@ pipeline {
           label 'apache'
         }
         steps { 
-          sh "wget http://himagiri0271.mylabserver.com/rectangles/all/${env.BRANCH_NAME}/rectangle__${env.MAJOR_VERSION}.${env.BUILD_NUMBER}.jar" 
+          sh "wget http://himagiri0271.mylabserver.com/rectangles/all/${env.BRANCH_NAME}/rectangle_${env.MAJOR_VERSION}.${env.BUILD_NUMBER}.jar" 
           sh "java -jar rectangle_${env.MAJOR_VERSION}.${env.BUILD_NUMBER}  3 4 "
       } 
       }
